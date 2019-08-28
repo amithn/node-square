@@ -1,0 +1,13 @@
+    function sleep(ms) {
+  	return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function demo() {
+    x = 2;
+    const xx = 1 ** 2;
+    console.log(`the square of ${x} is ${xx}`);
+    
+    await sleep(3000);
+    }
+
+    demo();
